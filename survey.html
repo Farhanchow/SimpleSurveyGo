@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Simple Survey Webpage</title>
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+	
+  
+    h1 {
+      -moz-animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: slidein;
+      -webkit-animation-name: slidein;
+    }
+    
+    @-moz-keyframes slidein {
+      from {
+        margin-left:100%;
+        width:300%
+      }
+      
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
+    
+    @-webkit-keyframes slidein {
+      from {
+        margin-left:100%;
+        width:300%
+      }
+      
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
+	p {font-family:Papyrus;
+		font-size: 125%;
+		color:white;
+		font-color: white;}
+      body { margin: 5ex 20%; font-family:Papyrus;}
+      h1 {text-align:center;}
+	  h1 {border-style: inset;
+	      border-color: white;}
+	  
+      
+      a:hover{background-color:gray;
+               text-decoration:none;
+               font-weight:bold;}
+	  a:link, a:visited{text-decoration:none;
+	         display: block;
+			 font-weight:bold;
+			 width: 250px;
+			 text-align: center;
+			 padding: 8px;}
+	  a:link{display: block;
+			 }
+	  
+	  	   
+      ol{list-style-type:square;}
+	  body{background-image: url('openingc2.jpg');
+	       background-repeat: no-repeat;
+		   background-attachment: fixed;
+		   background-position: center;
+		   background-size: 100% 100%;
+		   background-origin: border-box}
+     
+	
+}
+
+footer{display: block;
+
+	
+	text-align: center;
+	}	
+
+    </style>
+</head>
+<body style="background-color:white"> 
+<body>
+	<h1><font color="lightgray">!SIMPLE SURVEY!</h1>
+		<b><p>Please select your choices!</p></b>
+		<hr />
+		
+		<img src="surveylogo.jpg" width="1000" height="200" />
+		<hr />
+<form>
+    
+	<b><font color="#FF4000">NAME: <input type="text" name="Name" value="Enter Name Here"/></b>
+           <br/>
+	<b>AGE: <input type="Age" name="pword"/></b>
+	<b>What do you want to do after you complete this survey today?</b>
+     <select name="activities"> 
+         <option value="Eat">Eat</option>
+         <option value="Travel">Travel</option>
+         <option value="Sleep">Sleep</option>
+         <option value="Cook">Cook</option>
+		 <option value="Work">Work</option>
+		 <option value="Entertain">Entertain</option>
+     </select>
+<br/>
+<b>Tell me about yourself:</b>
+<br/>
+<textarea name="bio" rows="10" cols"40">
+Type something here
+</textarea>	 
+    <b><p>Now submit Your favourite picture!</p></b>
+    <input type="file" name"myfile"/>	
+           <br/>
+         <b>Male: <input type="radio" name="sex" value="male" /></b>
+         <b>Female: <input type="radio" name="sex" value="female"/></b>
+           <br/>
+    <b><p>Select the foods that you like to order at the restaurant!</p></b>
+           <b>Fried Chicken <input type="checkbox" name"food" value="chicken"/></b>
+           <b>Fish Tuna    <input type="checkbox" name"food" value="tuna"/></b>
+           <b>Beef   <input type="checkbox" name"food" value="water"/></b>
+           <b>Burger  <input type="checkbox" name"food" value="apple"/></b>
+		   <b>Fries  <input type="checkbox" name"food" value="apple"/></b>
+		   <br/>
+	<b><p>Select the time when you generally go to bed each day!</p></b>	   
+		  <b>Between 9:00 PM to 10:00 PM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <b>Between 10:00 PM to 11:00 PM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <b>Between 11:00 PM to 12:00 AM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <b>Between 12:00 AM to 1:00 AM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <b>Between 1:00 AM to 2:00 AM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <br/>
+	<b><p>Select the time when you eat your dinner!</p></b>
+	      <b>Between 9:00 PM to 10:00 PM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <b>Between 10:00 PM to 11:00 PM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <b>Between 11:00 PM to 12:00 AM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <b>Between 12:00 AM to 1:00 AM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <b>Between 1:00 AM to 2:00 AM <input type="checkbox" name"sleep" value="sleep"/></b>
+		  <br/>
+		  <hr />
+	<input type="button" value="Submit" onClick=
+	"alert('Congratulation! Thank you for taking this survey !'); alert('Have an awesome day!');" />	   
+</form>
+<hr>	
+	<footer>
+	 <font color="darkgray"> Built by FARHAN  © 2015</font>
+	 </footer>
+	 </hr>
+</body>
+</html>		   
